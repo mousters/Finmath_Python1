@@ -22,12 +22,12 @@ class Exchange:
     def __init__(self):
         self.orders = {}
     def handle_new_price(self, neworder):
+        #needs to copy-->bc data structure change outside can affect the code here
         o=neworder.copy()
         self.match(o['price'])
         self.orders[o['name']]=o['price']
     def match(self,n):
-        for o in self.orders:
-            if o['price']==n:
+        for k,v in self.orders.items():
+            if v==n:
                 print("match between %s for %d " \
-                      % (o['name'], o['price']))
-
+                      % (k,v))
