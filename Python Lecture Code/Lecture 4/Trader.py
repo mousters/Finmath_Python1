@@ -2,10 +2,12 @@ import threading
 import time
 import random
 class Trader(threading.Thread):
-    def __init__(self,name):
+    def __init__(self,name,exchange,lock):
         #because this class is inherited from threading-->super
         super().__init__()
         self.name = name
+        self.exchange=exchange
+        self.lock=lock
     #run the in the thread (this method is overwritten, threading has a method called run)
     def run(self):
         while True:
@@ -13,11 +15,10 @@ class Trader(threading.Thread):
             price_order=random.randrange(1,5)
             print('%s place an order for %d'
                         % (self.name,price_order))
-'''
-    trader1=Trader('Seb');trader2=Trader('Nic')
-    trader2.start(); trader1.start()
-    trader1.join(); trader2.join()
-'''
+            self.lock.acquire()
+            self.exchange.handle_new_price({'name':self.name,\
+                                            'price':price_order})
+            self.lock.release()
 class Exchange:
     def __init__(self):
         self.orders = {}
@@ -31,3 +32,9 @@ class Exchange:
             if v==n:
                 print("match between %s for %d " \
                       % (k,v))
+if __name__=='__main__':
+    exchange=Exchange()
+    ex_lock = threading.Lock()
+    trader1=Trader('Seb',exchange,ex_lock);trader2=Trader('Nic',exchange,ex_lock)
+    trader2.start(); trader1.start()
+    trader1.join(); trader2.join()
