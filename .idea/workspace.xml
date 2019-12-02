@@ -2,15 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7963f01c-58df-4c6d-937b-1287b7b486ac" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Finmath_Python1.iml" afterPath="$PROJECT_DIR$/.idea/Finmath_Python1.iml" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Python Lecture Code/Lecture 4/TCP_Example.py" afterPath="$PROJECT_DIR$/Python Lecture Code/INTER-PROCESS COMMUNICATION/TCP_Example.py" />
-      <change beforePath="$PROJECT_DIR$/Python Lecture Code/Lecture 4/Trader.py" afterPath="$PROJECT_DIR$/Python Lecture Code/INTER-PROCESS COMMUNICATION/Trader.py" />
-      <change beforePath="$PROJECT_DIR$/Python Lecture Code/Lecture 4/client_trader.py" afterPath="$PROJECT_DIR$/Python Lecture Code/INTER-PROCESS COMMUNICATION/client_trader.py" />
-      <change beforePath="$PROJECT_DIR$/Python Lecture Code/Lecture 4/cnt_down_thread.py" afterPath="$PROJECT_DIR$/Python Lecture Code/THREADING/cnt_down_thread.py" />
-      <change beforePath="$PROJECT_DIR$/Python Lecture Code/Lecture 4/date_and_time.py" afterPath="$PROJECT_DIR$/Python Lecture Code/TIME AND REX/date_and_time.py" />
-      <change beforePath="$PROJECT_DIR$/Python Lecture Code/Lecture 4/exchange_ut.py" afterPath="$PROJECT_DIR$/Python Lecture Code/INTER-PROCESS COMMUNICATION/exchange_ut.py" />
-      <change beforePath="$PROJECT_DIR$/Python Lecture Code/Lecture 4/search_match_REX.py" afterPath="$PROJECT_DIR$/Python Lecture Code/TIME AND REX/search_match_REX.py" />
-      <change beforePath="$PROJECT_DIR$/Python Lecture Code/Lecture 4/simple_bank.py" afterPath="$PROJECT_DIR$/Python Lecture Code/THREADING/simple_bank.py" />
+      <change beforePath="$PROJECT_DIR$/Python Lecture Code/BOOT2_Exceptions.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Python Lecture Code/BOOTCAMP SIMPLE.py" afterPath="$PROJECT_DIR$/Python Lecture Code/THE BASICS/BOOTCAMP SIMPLE.py" />
+      <change beforePath="$PROJECT_DIR$/Python Lecture Code/INTER-PROCESS COMMUNICATION/TCP_Example.py" afterPath="$PROJECT_DIR$/Python Lecture Code/INTER-PROCESS COMMUNICATION/TCP_Example.py" />
+      <change beforePath="$PROJECT_DIR$/Python Lecture Code/Lecture2/time_decorator.py" afterPath="$PROJECT_DIR$/Python Lecture Code/DECORATOR/time_decorator.py" />
+      <change beforePath="$PROJECT_DIR$/Python Lecture Code/Lecture2/upper_case_decorator.py" afterPath="$PROJECT_DIR$/Python Lecture Code/DECORATOR/upper_case_decorator.py" />
+      <change beforePath="$PROJECT_DIR$/Python Lecture Code/OrderBook.py" afterPath="$PROJECT_DIR$/Python Lecture Code/THE BASICS/OrderBook.py" />
+      <change beforePath="$PROJECT_DIR$/Python Lecture Code/OrderManager.py" afterPath="$PROJECT_DIR$/Python Lecture Code/THE BASICS/OrderManager.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,99 +22,103 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="client_trader.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Python Lecture Code/INTER-PROCESS COMMUNICATION/client_trader.py">
+      <file leaf-file-name="upper_case_decorator.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Python Lecture Code/DECORATOR/upper_case_decorator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="16" column="15" lean-forward="false" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="exchange_ut.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Python Lecture Code/INTER-PROCESS COMMUNICATION/exchange_ut.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="9" column="24" lean-forward="false" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="date_and_time.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Python Lecture Code/TIME AND REX/date_and_time.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="8" column="32" lean-forward="false" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
-              <folding>
-                <element signature="e#0#21#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Question 3.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Homework6/Question 3.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="693">
-              <caret line="57" column="13" lean-forward="false" selection-start-line="57" selection-start-column="13" selection-end-line="57" selection-end-column="13" />
+            <state relative-caret-position="315">
+              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Question 4.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Homework6/Question 4.py">
+      <file leaf-file-name="counter.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Python Lecture Code/DECORATOR/counter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="26" column="19" lean-forward="false" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
+            <state relative-caret-position="231">
+              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="search_match_REX.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Python Lecture Code/TIME AND REX/search_match_REX.py">
+      <file leaf-file-name="decorator testing.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Python Lecture Code/DECORATOR/decorator testing.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1155">
-              <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+            <state relative-caret-position="1370">
+              <caret line="98" column="27" lean-forward="true" selection-start-line="98" selection-start-column="27" selection-end-line="98" selection-end-column="27" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="private_decorator.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Python Lecture Code/DECORATOR/private_decorator.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="LEC NOTES" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Python Lecture Code/INTER-PROCESS COMMUNICATION/LEC NOTES">
+        <entry file="file://$PROJECT_DIR$/Python Lecture Code/THE BASICS/LEC NOTES">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="42">
-              <caret line="2" column="37" lean-forward="false" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
+              <caret line="2" column="34" lean-forward="false" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="simple_bank.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Python Lecture Code/THREADING/simple_bank.py">
+      <file leaf-file-name="time_decorator.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Python Lecture Code/DECORATOR/time_decorator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2121">
-              <caret line="101" column="3" lean-forward="false" selection-start-line="101" selection-start-column="3" selection-end-line="101" selection-end-column="3" />
-              <folding>
-                <element signature="e#21#37#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="273">
+              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Question 5.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Homework6/Question 5.py">
+      <file leaf-file-name="string_splitter.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Python Lecture Code/DECORATOR/string_splitter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4116">
-              <caret line="199" column="10" lean-forward="false" selection-start-line="199" selection-start-column="10" selection-end-line="199" selection-end-column="10" />
+            <state relative-caret-position="105">
+              <caret line="5" column="18" lean-forward="true" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BOOTCAMP SIMPLE.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Python Lecture Code/THE BASICS/BOOTCAMP SIMPLE.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="929">
+              <caret line="64" column="16" lean-forward="false" selection-start-line="64" selection-start-column="16" selection-end-line="64" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OrderBook.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Python Lecture Code/THE BASICS/OrderBook.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="20" column="10" lean-forward="false" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OrderManager.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Python Lecture Code/THE BASICS/OrderManager.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="588">
+              <caret line="28" column="50" lean-forward="false" selection-start-line="28" selection-start-column="50" selection-end-line="28" selection-end-column="50" />
               <folding />
             </state>
           </provider>
@@ -131,6 +136,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>8</find>
+      <find>sock</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -168,6 +174,17 @@
         <option value="$PROJECT_DIR$/Python Lecture Code/BOOT2_Exceptions.py" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.txt" />
         <option value="$PROJECT_DIR$/Python Lecture Code/INTER-PROCESS COMMUNICATION/LEC NOTES" />
+        <option value="$PROJECT_DIR$/Python Lecture Code/INTER-PROCESS COMMUNICATION/TCP_Example.py" />
+        <option value="$PROJECT_DIR$/Python Lecture Code/DATA_ANALYSIS/numpy_exp.py" />
+        <option value="$PROJECT_DIR$/Python Lecture Code/THE BASICS/LEC NOTES" />
+        <option value="$PROJECT_DIR$/Python Lecture Code/THE BASICS/EXCEPTIONS_BASICS.py" />
+        <option value="$PROJECT_DIR$/Python Lecture Code/DECORATOR/string_splitter().py" />
+        <option value="$PROJECT_DIR$/Python Lecture Code/DECORATOR/time_decorator.py" />
+        <option value="$PROJECT_DIR$/Python Lecture Code/DECORATOR/upper_case_decorator.py" />
+        <option value="$PROJECT_DIR$/Python Lecture Code/DECORATOR/string_splitter.py" />
+        <option value="$PROJECT_DIR$/Python Lecture Code/DECORATOR/counter.py" />
+        <option value="$PROJECT_DIR$/Python Lecture Code/DECORATOR/decorator testing.py" />
+        <option value="$PROJECT_DIR$/Python Lecture Code/DECORATOR/private_decorator.py" />
       </list>
     </option>
   </component>
@@ -217,13 +234,7 @@
               <item name="Finmath_Python1" type="b2602c69:ProjectViewProjectNode" />
               <item name="Finmath_Python1" type="462c0819:PsiDirectoryNode" />
               <item name="Python Lecture Code" type="462c0819:PsiDirectoryNode" />
-              <item name="INTER-PROCESS COMMUNICATION" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Finmath_Python1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Finmath_Python1" type="462c0819:PsiDirectoryNode" />
-              <item name="Python Lecture Code" type="462c0819:PsiDirectoryNode" />
-              <item name="Lecture2" type="462c0819:PsiDirectoryNode" />
+              <item name="THE BASICS" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Finmath_Python1" type="b2602c69:ProjectViewProjectNode" />
@@ -250,11 +261,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\David Mou\Desktop\GITHUB\Finmath_Python1\Python Lecture Code\THE BASICS" />
+      <recent name="C:\Users\David Mou\Desktop\GITHUB\Finmath_Python1\Python Lecture Code\DECORATOR" />
       <recent name="C:\Users\David Mou\Desktop\GITHUB\Finmath_Python1\Python Lecture Code\TIME AND REX" />
       <recent name="C:\Users\David Mou\Desktop\GITHUB\Finmath_Python1\Python Lecture Code\INTER-PROCESS COMMUNICATION" />
       <recent name="C:\Users\David Mou\Desktop\GITHUB\Finmath_Python1\Python Lecture Code\THREADING" />
-      <recent name="C:\Users\David Mou\Desktop\GITHUB\Finmath_Python1\Python Lecture Code" />
-      <recent name="C:\Users\David Mou\Desktop\GITHUB\Finmath_Python1" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -269,20 +280,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.simple_bank">
-    <configuration name="BOOT2_Exceptions (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.private_decorator">
+    <configuration name="EXCEPTIONS_BASICS" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python Lecture Code" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python Lecture Code/THE BASICS" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Finmath_Python1" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python Lecture Code/BOOT2_Exceptions.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python Lecture Code/THE BASICS/EXCEPTIONS_BASICS.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -306,73 +317,73 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="cnt_down_thread" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="counter" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python Lecture Code/Lecture 4" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python Lecture Code/DECORATOR" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Finmath_Python1" />
-      <option name="SCRIPT_NAME" value="C:\Users\David Mou\Desktop\GITHUB\Finmath_Python1\Python Lecture Code\THREADING\cnt_down_thread.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python Lecture Code/DECORATOR/counter.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="date_and_time" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="decorator testing" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python Lecture Code/Lecture 4" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python Lecture Code/DECORATOR" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Finmath_Python1" />
-      <option name="SCRIPT_NAME" value="C:\Users\David Mou\Desktop\GITHUB\Finmath_Python1\Python Lecture Code\TIME AND REX\date_and_time.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python Lecture Code/DECORATOR/decorator testing.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="search_match_REX" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="private_decorator" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python Lecture Code/Lecture 4" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python Lecture Code/DECORATOR" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Finmath_Python1" />
-      <option name="SCRIPT_NAME" value="C:\Users\David Mou\Desktop\GITHUB\Finmath_Python1\Python Lecture Code\TIME AND REX\search_match_REX.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python Lecture Code/DECORATOR/private_decorator.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="simple_bank" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="upper_case_decorator" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python Lecture Code/Lecture 4" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python Lecture Code/DECORATOR" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Finmath_Python1" />
-      <option name="SCRIPT_NAME" value="C:\Users\David Mou\Desktop\GITHUB\Finmath_Python1\Python Lecture Code\THREADING\simple_bank.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python Lecture Code/DECORATOR/upper_case_decorator.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -380,19 +391,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python.Trader" />
-      <item index="1" class="java.lang.String" itemvalue="Python.date_and_time" />
-      <item index="2" class="java.lang.String" itemvalue="Python.search_match_REX" />
-      <item index="3" class="java.lang.String" itemvalue="Python.BOOT2_Exceptions (1)" />
-      <item index="4" class="java.lang.String" itemvalue="Python.cnt_down_thread" />
-      <item index="5" class="java.lang.String" itemvalue="Python.simple_bank" />
+      <item index="1" class="java.lang.String" itemvalue="Python.upper_case_decorator" />
+      <item index="2" class="java.lang.String" itemvalue="Python.EXCEPTIONS_BASICS" />
+      <item index="3" class="java.lang.String" itemvalue="Python.decorator testing" />
+      <item index="4" class="java.lang.String" itemvalue="Python.counter" />
+      <item index="5" class="java.lang.String" itemvalue="Python.private_decorator" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.simple_bank" />
-        <item index="1" class="java.lang.String" itemvalue="Python.cnt_down_thread" />
-        <item index="2" class="java.lang.String" itemvalue="Python.BOOT2_Exceptions (1)" />
-        <item index="3" class="java.lang.String" itemvalue="Python.search_match_REX" />
-        <item index="4" class="java.lang.String" itemvalue="Python.date_and_time" />
+        <item index="0" class="java.lang.String" itemvalue="Python.private_decorator" />
+        <item index="1" class="java.lang.String" itemvalue="Python.decorator testing" />
+        <item index="2" class="java.lang.String" itemvalue="Python.counter" />
+        <item index="3" class="java.lang.String" itemvalue="Python.EXCEPTIONS_BASICS" />
+        <item index="4" class="java.lang.String" itemvalue="Python.upper_case_decorator" />
       </list>
     </recent_temporary>
   </component>
@@ -453,7 +464,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295325" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295325" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295325" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3295325" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295325" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -477,82 +488,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Python Lecture Code/INTER-PROCESS COMMUNICATION/Trader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="24" column="24" lean-forward="false" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#16#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Python Lecture Code/Lecture2/upper_case_decorator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="34" lean-forward="false" selection-start-line="0" selection-start-column="33" selection-end-line="0" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Python Lecture Code/Lecture2/time_decorator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="11" column="8" lean-forward="false" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#16#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Python Lecture Code/BOOT2_Exceptions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="21" column="20" lean-forward="false" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Python Lecture Code/INTER-PROCESS COMMUNICATION/client_trader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Python Lecture Code/INTER-PROCESS COMMUNICATION/exchange_ut.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="24" lean-forward="false" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Python Lecture Code/TIME AND REX/date_and_time.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Python Lecture Code/THREADING/simple_bank.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="882">
-          <caret line="44" column="27" lean-forward="false" selection-start-line="44" selection-start-column="27" selection-end-line="44" selection-end-column="27" />
-          <folding>
-            <element signature="e#21#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Python Lecture Code/TIME AND REX/search_match_REX.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="651">
@@ -581,7 +516,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Python Lecture Code/BOOTCAMP SIMPLE.py">
+    <entry file="file://$PROJECT_DIR$/Python Lecture Code/THE BASICS/BOOTCAMP SIMPLE.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1197">
           <caret line="57" column="36" lean-forward="false" selection-start-line="57" selection-start-column="36" selection-end-line="57" selection-end-column="36" />
@@ -589,7 +524,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Python Lecture Code/BOOT2_Exceptions.py">
+    <entry file="file://$PROJECT_DIR$/Python Lecture Code/THE BASICS/BOOT2_Exceptions.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
           <caret line="19" column="11" lean-forward="false" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
@@ -602,12 +537,12 @@
         <state relative-caret-position="21">
           <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
           <folding>
-            <element signature="e#0#21#0" expanded="true" />
+            <element signature="e#0#21#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Python Lecture Code/OrderBook.py">
+    <entry file="file://$PROJECT_DIR$/Python Lecture Code/THE BASICS/OrderBook.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="20" column="10" lean-forward="true" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
@@ -615,7 +550,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Python Lecture Code/OrderManager.py">
+    <entry file="file://$PROJECT_DIR$/Python Lecture Code/THE BASICS/OrderManager.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="588">
           <caret line="28" column="50" lean-forward="false" selection-start-line="28" selection-start-column="50" selection-end-line="28" selection-end-column="50" />
@@ -684,7 +619,7 @@
         <state relative-caret-position="168">
           <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
           <folding>
-            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#0#15#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -701,7 +636,7 @@
         <state relative-caret-position="273">
           <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding>
-            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#0#13#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -713,7 +648,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Python Lecture Code/Lecture2/upper_case_decorator.py">
+    <entry file="file://$PROJECT_DIR$/Python Lecture Code/DECORATOR/upper_case_decorator.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -730,24 +665,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Python Lecture Code/Lecture 4/search_match.py" />
-    <entry file="file://$PROJECT_DIR$/Python Lecture Code/INTER-PROCESS COMMUNICATION/Trader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="24" column="24" lean-forward="false" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#16#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Python Lecture Code/INTER-PROCESS COMMUNICATION/TCP_Example.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="21" lean-forward="false" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Python Lecture Code/THREADING/cnt_down_thread.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
@@ -755,56 +672,6 @@
           <folding>
             <element signature="e#0#16#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Python Lecture Code/Lecture2/upper_case_decorator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="34" lean-forward="false" selection-start-line="0" selection-start-column="33" selection-end-line="0" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Python Lecture Code/Lecture2/time_decorator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="8" lean-forward="false" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#16#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Python Lecture Code/BOOT2_Exceptions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="35" lean-forward="true" selection-start-line="0" selection-start-column="35" selection-end-line="0" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Python Lecture Code/BOOTCAMP SIMPLE.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1197">
-          <caret line="57" column="36" lean-forward="false" selection-start-line="57" selection-start-column="36" selection-end-line="57" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Python Lecture Code/OrderBook.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="20" column="10" lean-forward="false" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Python Lecture Code/OrderManager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="28" column="50" lean-forward="false" selection-start-line="28" selection-start-column="50" selection-end-line="28" selection-end-column="50" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -832,14 +699,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Homework6/Question 4.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="26" column="19" lean-forward="false" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Homework6/Question 5.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4116">
@@ -853,7 +712,7 @@
         <state relative-caret-position="336">
           <caret line="16" column="15" lean-forward="false" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
           <folding>
-            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#0#13#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -863,7 +722,7 @@
         <state relative-caret-position="168">
           <caret line="8" column="32" lean-forward="false" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
           <folding>
-            <element signature="e#0#21#0" expanded="true" />
+            <element signature="e#0#21#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -873,17 +732,7 @@
         <state relative-caret-position="189">
           <caret line="9" column="24" lean-forward="false" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
           <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Python Lecture Code/THREADING/simple_bank.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2121">
-          <caret line="101" column="3" lean-forward="false" selection-start-line="101" selection-start-column="3" selection-end-line="101" selection-end-column="3" />
-          <folding>
-            <element signature="e#21#37#0" expanded="true" />
+            <element signature="e#0#15#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -896,6 +745,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Python Lecture Code/INTER-PROCESS COMMUNICATION/LEC NOTES">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="37" lean-forward="false" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Homework6/Question 4.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="26" column="19" lean-forward="false" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Python Lecture Code/TIME AND REX/search_match_REX.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1155">
@@ -904,10 +769,144 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Python Lecture Code/INTER-PROCESS COMMUNICATION/LEC NOTES">
+    <entry file="file://$PROJECT_DIR$/Python Lecture Code/THREADING/simple_bank.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2121">
+          <caret line="101" column="3" lean-forward="false" selection-start-line="101" selection-start-column="3" selection-end-line="101" selection-end-column="3" />
+          <folding>
+            <element signature="e#21#37#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python Lecture Code/INTER-PROCESS COMMUNICATION/TCP_Example.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="24" column="68" lean-forward="false" selection-start-line="24" selection-start-column="68" selection-end-line="24" selection-end-column="68" />
+          <folding>
+            <element signature="e#0#19#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python Lecture Code/INTER-PROCESS COMMUNICATION/Trader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="24" column="26" lean-forward="false" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python Lecture Code/DATA_ANALYSIS/numpy_exp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="446">
+          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python Lecture Code/THE BASICS/OrderBook.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="20" column="10" lean-forward="false" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python Lecture Code/THE BASICS/BOOT2_Exceptions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="14" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="22" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python Lecture Code/THE BASICS/OrderManager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="28" column="50" lean-forward="false" selection-start-line="28" selection-start-column="50" selection-end-line="28" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python Lecture Code/THE BASICS/BOOTCAMP SIMPLE.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="929">
+          <caret line="64" column="16" lean-forward="false" selection-start-line="64" selection-start-column="16" selection-end-line="64" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python Lecture Code/THE BASICS/EXCEPTIONS_BASICS.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="22" column="49" lean-forward="false" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python Lecture Code/DECORATOR/string_splitter().py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python Lecture Code/DECORATOR/string_splitter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="18" lean-forward="true" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python Lecture Code/DECORATOR/time_decorator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python Lecture Code/DECORATOR/upper_case_decorator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python Lecture Code/DECORATOR/counter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python Lecture Code/DECORATOR/decorator testing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1370">
+          <caret line="98" column="27" lean-forward="true" selection-start-line="98" selection-start-column="27" selection-end-line="98" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python Lecture Code/DECORATOR/private_decorator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python Lecture Code/THE BASICS/LEC NOTES">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
-          <caret line="2" column="37" lean-forward="false" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
+          <caret line="2" column="34" lean-forward="false" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
           <folding />
         </state>
       </provider>
