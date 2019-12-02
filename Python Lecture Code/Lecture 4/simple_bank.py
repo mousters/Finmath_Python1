@@ -1,10 +1,12 @@
-'''threading examples'''
+# threading examples
 import threading
 import sys
 import time
 balance_lock=threading.Lock()
 sema_lock=threading.Semaphore(2)
+
 #both clients deposit 1 USD at a time, the var is how much they deposit
+
 def client(action,amt):
     global balance
     for i in range(amt):
@@ -32,11 +34,11 @@ def observer(x):
             time.sleep(x)
     finally:
         sema_lock.release()
-'''
-DEADLOCK: RESULT FROM THE FOLLOWING CODE:
-    x_lock = threading.Lock()
-    y_lock = threading.Lock()
-'''
+
+# DEADLOCK: RESULT FROM THE FOLLOWING CODE:
+#     x_lock = threading.Lock()
+#     y_lock = threading.Lock()
+
 
 if __name__=='__main__':
     balance = 0
