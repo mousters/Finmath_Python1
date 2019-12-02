@@ -1,0 +1,20 @@
+SOCKET
+    AKA TCP :: CONNECTION ORIENTED; RELIABLE DELIVERY
+    TCP: SEND MESSAGE AS BYTES STREAM
+    Bidirectional
+    Meant for network communication but can be used locally
+    Command: socket
+    Datagram packets transmitted to destination IP host
+    A socket is a communication end point
+
+
+MESSAGE QUEUE
+    Linked list of message structures stored inside the kernel’s memory space and accessible by multiple processes
+SHARED MEMORY
+    Allow a process to read and/or write to memory created by another process
+    Unlike message queues and pipes, which copy data from the
+    process into memory within the kernel, shared memory is directly
+    accessed
+    No automatic synchronization
+SOCKET COMMUNICATION
+    https://docs.python.org/2/howto/sockets.html
