@@ -212,8 +212,9 @@ class Exchange(MyThread):
         check = lambda x: 1 if (x ==OrderSide.BUY) else -1
         if filled_order != None:
             for i in filled_order:
-                exchange.position[i.id] += check(i.side) * i.quantity
-                exchange.balance[i.id] -= check(i.side) * i.price * i.quantity
+                if i.id !=order.id:
+                    exchange.position[i.id] += check(i.side) * i.quantity
+                    exchange.balance[i.id] -= check(i.side) * i.price * i.quantity
 
         return results
 

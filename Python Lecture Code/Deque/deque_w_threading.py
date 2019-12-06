@@ -13,13 +13,14 @@ def receive_item():
     lock_queu.acquire()
     a=channel.popleft()
     lock_queu.release()
-    print(a)
+    print('receive',a)
 
 
 def producer():
     global id
     producer_id='Producer: '+str(id)
     for i in range(10):
+        print(producer_id,'send')
         send_item((producer_id,i))
     id+=1
 

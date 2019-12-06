@@ -78,7 +78,10 @@ def largestSegment(radius, numberOfSegments):
 
 
 if __name__=='__main__':
-    radius=[1,1,1,2,2,3]
-    numberOfSegments=6
+    import random
+    radius=[]
+    for i in range(1000):
+        radius.append(random.randint(1,100))
+    numberOfSegments=500
     print(largestSegment(radius,numberOfSegments))
 

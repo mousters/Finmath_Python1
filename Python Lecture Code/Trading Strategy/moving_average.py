@@ -21,15 +21,18 @@ except:
 ts=pd.DataFrame(index=tsla.index)
 
 ts['price']=tsla['Adj Close']
+#lowest 30 day price
 ts['support']=ts['price'].rolling(30).min()
+#max 30 day price
 ts['resistance']=ts['price'].rolling(30).max()
-
-ts['tol_support']=ts['support']+ (ts['resistance']-\
-                            ts['support'])*0.05
+#support + the 0.05* difference between support and resistance
+ts['tol_support']=ts['support']+ (ts['resistance']-ts['support'])*0.05
 ts['tol_resistance']=ts['resistance'] - (ts['resistance']-\
                             ts['support'])*0.05
 
+#if price is greater than the cap: sell
 ts['signal_sell']=np.where(ts['price']>ts['tol_resistance'],1,0)
+#if price is lower than the base: buy
 ts['signal_buy']=np.where(ts['price']<ts['tol_support'],1,0)
 
 ts['position']=pd.Series(np.zeros(len(ts)))
@@ -72,8 +75,7 @@ positions=pd.DataFrame(index=ts.index).fillna(0)
 positions['TSLA']=10*ts['signal']
 positions['TSLA'][0]=0
 portfolio=positions.multiply(ts['price'],axis=0)
-portfolio['holdings']=ts['position'].multiply(\
-    ts['price'],axis=0)*10
+portfolio['holdings']=ts['position'].multiply(ts['price'],axis=0)*10
 pos_diff=positions.diff()
 portfolio['cash']=initial_capital - portfolio['TSLA'].cumsum()
 portfolio['total']=portfolio['cash']+portfolio['holdings']

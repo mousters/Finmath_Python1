@@ -128,8 +128,7 @@ class Exchange:
                         t.appendleft(received_message)
                     ct += 1
             count += 1
-
-
+        # print(len(self.list_traders[1]),len(self.list_traders[0]))
 # Enter your code here. Read input from STDIN. Print output to STDOUT
 
 class Trader:
@@ -160,8 +159,8 @@ class Trader:
         self.sock.connect(["localhost", 9999])
         msg = self.sock.recv(1024)
         if msg is not None:
-            self.received = msg.decode('utf-8')[38:43]
-
+            self.received = msg.decode('utf-8')
+            #received=  "sell
         self.sock.close()
 
 
