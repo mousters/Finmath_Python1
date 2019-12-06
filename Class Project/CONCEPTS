@@ -1,0 +1,20 @@
+LIMIT ORDER:
+    A limit order is an order to buy or sell a stock at a specific price or better.
+    A buy limit order can only be executed at the limit price or lower,
+    and a sell limit order can only be executed at the limit price or higher.
+    A limit order is not guaranteed to execute.
+    A limit order can only be filled if the stock’s market price reaches the limit price.
+    While limit orders do not guarantee execution,
+    they help ensure that an investor does not pay more than a pre-determined price for a stock.
+MARKET ORDER:
+    An order is an instruction to buy or sell on a trading venue such as
+    a stock market, bond market, commodity market, financial derivative market or cryptocurrency exchange.
+    These instructions can be simple or complicated, and can be sent to either a broker or directly to
+    a trading venue via direct market access. There are some standard instructions for such orders.
+IOC ORDER:
+    An Immediate Or Cancel (IOC) order requires all or part of the order to be executed immediately,
+    and any unfilled parts of the order are canceled.
+    Partial fills are accepted with this type of order duration,
+    unlike a fill-or-kill order, which must be filled immediately in its entirety or be canceled.
+
+

@@ -1,0 +1,23 @@
+Use regular expressions to:
+    Search a string ( search and match)
+        Search looks for a pattern anywhere in a string
+        Match looks for a match staring at the beginning
+    Replace parts of a string ( sub)
+    Break strings into smaller pieces ( split)
+# x* matche zero or more x
+
+# x+ matches one or more x
+
+# x? match zero or one x
+
+# x{2,3} match 2 or 3 x
+
+# \d any digit
+
+# \s any whitespaces
+
+# \w any alphanumeric
+
+# \W any non alphanumeric
+
+# ^ matches the beginning of a string

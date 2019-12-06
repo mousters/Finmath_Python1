@@ -37,3 +37,37 @@ if __name__ == '__main__':
     tc1.join()
     tc2.join()
     print('END OF COUNT_DOWN CODE')
+
+
+
+'''
+The two COUNTING program starts
+0
+0
+1
+1
+2
+2
+3
+end of the thread with the timeout 3
+4
+5
+end of the thread with the timeout 6
+The two program joins
+END OF COUNTING CODE
+
+The two COUNT_DOWN program starts
+Counting down,  6
+Counting down,  3
+Counting down,  2
+Counting down,  5
+Counting down,  4
+Counting down,  1
+Counting down,  3
+end of the thread with the timeout 3
+Counting down,  2
+Counting down,  1
+end of the thread with the timeout 6
+END OF COUNT_DOWN CODE
+
+'''

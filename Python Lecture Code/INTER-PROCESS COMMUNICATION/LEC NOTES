@@ -1,20 +1,29 @@
 SOCKET
-    AKA TCP :: CONNECTION ORIENTED; RELIABLE DELIVERY
-    TCP: SEND MESSAGE AS BYTES STREAM
-    Bidirectional
-    Meant for network communication but can be used locally
     Command: socket
     Datagram packets transmitted to destination IP host
     A socket is a communication end point
-
+    SOCK STREAM-->AKA TCP :: CONNECTION ORIENTED; RELIABLE DELIVERY
+        TCP: SEND MESSAGE AS BYTES STREAM
+        Bidirectional
+        Meant for network communication but can be used locally
+CONCEPT:
+    SERVER OPENS PORT; PASSIVE; WAIT FOR REQUEST
+        with socketserver.TCPServer((HOST, PORT), MyTCPHandler) as server
+        CODE IN TCP_EXAMPLE.PY
+    CLIENTS GET EPHEMERAL PORTS; ACTIVE OPENER; COMMUNICATE WITH SERVER
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sock:
 
 MESSAGE QUEUE
     Linked list of message structures stored inside the kernel’s memory space and accessible by multiple processes
+    New messages added at the end of the queue
+
 SHARED MEMORY
+    DIRECTLY ACCESSED
     Allow a process to read and/or write to memory created by another process
     Unlike message queues and pipes, which copy data from the
     process into memory within the kernel, shared memory is directly
     accessed
     No automatic synchronization
+
 SOCKET COMMUNICATION
     https://docs.python.org/2/howto/sockets.html

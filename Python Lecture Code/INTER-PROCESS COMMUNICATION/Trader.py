@@ -38,3 +38,37 @@ if __name__=='__main__':
     trader1=Trader('Seb',exchange,ex_lock);trader2=Trader('Nic',exchange,ex_lock)
     trader2.start(); trader1.start()
     trader1.join(); trader2.join()
+'''
+Nic place an order for 4
+Seb place an order for 2
+Seb place an order for 2
+match between Seb for 2 
+Nic place an order for 2
+match between Seb for 2 
+Seb place an order for 3
+Nic place an order for 2
+match between Nic for 2 
+Seb place an order for 3
+match between Seb for 3 
+Nic place an order for 4
+Seb place an order for 1
+Nic place an order for 3
+Seb place an order for 2
+Nic place an order for 4
+Seb place an order for 4
+match between Nic for 4 
+Nic place an order for 2
+Seb place an order for 4
+match between Seb for 4 
+Nic place an order for 2
+match between Nic for 2 
+Seb place an order for 4
+match between Seb for 4 
+Nic place an order for 3
+Seb place an order for 4
+match between Seb for 4 
+Nic place an order for 4
+match between Seb for 4 
+....
+
+'''
