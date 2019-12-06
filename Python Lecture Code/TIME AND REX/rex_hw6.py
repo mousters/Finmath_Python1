@@ -118,5 +118,10 @@ def test5():
 
 
 if __name__ == '__main__':
-    test_number = int(input().strip())
-    globals()['test'+str(test_number)]()
+    # test_number = int(input().strip())
+    # globals()['test'+str(test_number)]()
+    test1()
+    test2()
+    test3()
+    test4()
+    test5()

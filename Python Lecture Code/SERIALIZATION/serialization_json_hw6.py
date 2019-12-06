@@ -5,7 +5,7 @@ class Order:
         self.price=price
         self.quantity=quantity
         self.side=side
-
+#decoding the order into a library
 class OrderEncoder(json.JSONEncoder):
     def default(self,z):
         if isinstance(z,Order):

@@ -116,6 +116,7 @@ class Exchange:
 
     def handle_traders(self):
         count = 0
+        #exchange_to_trader, trader_to_exchange
         for trader in self.list_traders[1]:
             if trader:
                 received_message = trader.pop()

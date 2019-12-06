@@ -39,7 +39,7 @@ class sqlite3:
     def connect(dbfile):
         return connection()
 
-conn=sqlite3.connect('mktdata.db')
+conn=sqlite3.connect('mktdata_1.db')
 c=conn.cursor()
 c.execute('''create table students(
 Id INTEGER NOT NULL,

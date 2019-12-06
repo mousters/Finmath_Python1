@@ -82,16 +82,18 @@ def pocket_calculator(x, operator, y):
 
 
 if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+    print(pocket_calculator(3,'x',14))
 
-    x = input()
-
-    operator = input()
-
-    y = input()
-
-    result = pocket_calculator(x, operator, y)
-
-    fptr.write(result + '\n')
-
-    fptr.close()
+    # fptr = open(os.environ['OUTPUT_PATH'], 'w')
+    #
+    # x = input()
+    #
+    # operator = input()
+    #
+    # y = input()
+    #
+    # result = pocket_calculator(x, operator, y)
+    #
+    # fptr.write(result + '\n')
+    #
+    # fptr.close()
