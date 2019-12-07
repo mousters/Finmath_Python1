@@ -2,7 +2,6 @@ from collections import deque
 import time
 import random
 from abc import ABC
-# from  Matching_Engine import MatchingEngine
 from enum import Enum
 class OrderType(Enum):
     LIMIT = 1
@@ -65,6 +64,227 @@ class FilledOrder(Order):
         super().__init__(id, symbol, quantity, side, time)
         self.price = price
         self.limit = limit
+        self.side=side
+class MatchingEngine():
+    def __init__(self):
+        self.bid_book = []
+        self.ask_book = []
+        # These are the order books you are given and expected to use for matching the orders below
+
+    def handle_order(self, order):
+        if order.type == OrderType.LIMIT:
+            return self.handle_limit_order(order)
+        elif order.type == OrderType.MARKET:
+            return self.handle_market_order(order)
+        elif order.type == OrderType.IOC:
+            return self.handle_ioc_order(order)
+        else:
+            raise UndefinedOrderType("Undefined Order Type!")
+
+    def sort_order(self):
+        self.bid_book = sorted(self.bid_book, key=lambda o: (-o.price, o.time))
+        self.ask_book = sorted(self.ask_book, key=lambda o: (o.price, o.time))
+    def handle_buy(self,order):
+        filled_orders=[]
+        removal=[]
+        if len(self.ask_book) == 0 and order.type == OrderType.LIMIT:
+            self.insert_limit_order(order)
+            return
+        for e in self.ask_book:
+            # print('matching engine', e.quantity, order.quantity)
+            #e for existing order
+            if order.quantity==0:
+                break
+            elif order.type==OrderType.LIMIT:
+                if e.quantity> order.quantity and e.price<=order.price:
+                    # print('C1', order.id)
+                    # print(e.quantity,order.quantity)
+                    e.quantity-=order.quantity
+                    filled_orders.append(FilledOrder(e.id, e.symbol, order.quantity, e.price, e.side, e.time))
+                    filled_orders.append(FilledOrder(order.id,order.symbol,order.quantity,e.price,order.side,order.time))
+                    order.quantity = 0
+                    break
+                elif  e.quantity<= order.quantity and e.price<=order.price:
+                    # print('C2')
+                    filled_orders.append(FilledOrder(e.id,e.symbol,e.quantity,e.price,e.side,e.time))
+                    filled_orders.append(FilledOrder(order.id, e.symbol, e.quantity, e.price, order.side, order.time))
+                    order.quantity -= e.quantity
+                    # print('filled order len ',len(filled_orders))
+                    removal.append(e)
+                    if order.quantity==0:
+                        break
+                elif e.price > order.price and order.quantity>0:
+                    self.insert_limit_order(order)
+            elif order.type==OrderType.MARKET:
+                if e.quantity>order.quantity:
+                    e.quantity-=order.quantity
+                    filled_orders.append(FilledOrder(order.id, order.symbol, order.quantity, e.price, order.side, order.time))
+                    filled_orders.append(FilledOrder(e.id, e.symbol, e.quantity, e.price, e.side, e.time))
+                    break
+                elif e.quantity<= order.quantity:
+                    order.quantity -= e.quantity
+                    filled_orders.append(FilledOrder(e.id, e.symbol, e.quantity, e.price, e.side, e.time))
+                    removal.append(e)
+                    if order.quantity == 0:
+                        filled_orders.append(FilledOrder(order.id, order.symbol, e.quantity, e.price, order.side, order.time))
+                        break
+            elif order.type==OrderType.IOC:
+                if e.quantity> order.quantity and e.price<=order.price:
+                    e.quantity-=order.quantity
+                    filled_orders.append(FilledOrder(order.id,order.symbol,order.quantity,e.price,order.side,order.time))
+                    filled_orders.append(FilledOrder(e.id, e.symbol, e.quantity, e.price, e.side, e.time))
+                    break
+                elif  e.quantity<= order.quantity and e.price<=order.price:
+                    order.quantity-=e.quantity
+                    filled_orders.append(FilledOrder(e.id,e.symbol,e.quantity,e.price,e.side,e.time))
+                    removal.append(e)
+                    if order.quantity==0:
+                        filled_orders.append(FilledOrder(order.id, order.symbol, e.quantity, e.price, order.side, order.time))
+                        break
+        for i in removal:
+            self.ask_book.remove(i)
+        if order.quantity>0 and order.type==OrderType.LIMIT:
+            self.insert_limit_order(order)
+        return filled_orders
+
+    def handle_sell(self,order):
+        filled_orders = []
+        removal=[]
+        if len(self.bid_book)==0 and order.type==OrderType.LIMIT:
+            self.insert_limit_order(order)
+            return
+        for e in self.bid_book:
+            # e for existing order
+            if order.quantity == 0:
+                break
+            elif order.type == OrderType.LIMIT:
+                if e.quantity > order.quantity and e.price >= order.price:
+                    # print('C1',order.id)
+                    # print(e.quantity, order.quantity)
+                    e.quantity -= order.quantity
+                    filled_orders.append(FilledOrder(e.id, e.symbol, order.quantity, e.price, e.side, e.time))
+                    filled_orders.append(FilledOrder(order.id, order.symbol, order.quantity, e.price, order.side, order.time))
+                    order.quantity = 0
+                    break
+                elif e.quantity <= order.quantity and e.price >= order.price:
+                    # print('C2')
+                    filled_orders.append(FilledOrder(e.id, e.symbol, e.quantity, e.price, e.side, e.time))
+                    filled_orders.append(FilledOrder(order.id, e.symbol, e.quantity, e.price, order.side, order.time))
+                    order.quantity -= e.quantity
+                    removal.append(e)
+                    if order.quantity == 0:
+                        # filled_orders.append(FilledOrder(order.id, order.symbol, e.quantity, e.price, order.side, order.time))
+                        break
+                elif e.price < order.price and order.quantity>0:
+                    self.insert_limit_order(order)
+            elif order.type==OrderType.MARKET:
+                if e.quantity>order.quantity:
+                    e.quantity-=order.quantity
+                    filled_orders.append(FilledOrder(order.id, order.symbol, order.quantity, e.price, order.side, order.time))
+                    filled_orders.append(FilledOrder(e.id, e.symbol, e.quantity, e.price, e.side, e.time))
+                    order.quantity=0
+                    break
+                elif e.quantity<= order.quantity:
+                    order.quantity -= e.quantity
+                    filled_orders.append(FilledOrder(e.id, e.symbol, e.quantity, e.price, e.side, e.time))
+                    removal.append(e)
+                    if order.quantity == 0:
+                        filled_orders.append(FilledOrder(order.id, order.symbol, e.quantity, e.price, order.side, order.time))
+                        break
+            elif order.type == OrderType.IOC:
+                if e.quantity > order.quantity and e.price >= order.price:
+                    e.quantity -= order.quantity
+                    filled_orders.append(
+                        FilledOrder(order.id, order.symbol, order.quantity, e.price, order.side, order.time))
+                    filled_orders.append(FilledOrder(e.id, e.symbol, e.quantity, e.price, e.side, e.time))
+                    break
+                elif e.quantity <= order.quantity and e.price >= order.price:
+                    order.quantity -= e.quantity
+                    filled_orders.append(FilledOrder(e.id, e.symbol, e.quantity, e.price, e.side, e.time))
+                    removal.append(e)
+                    if order.quantity == 0:
+                        filled_orders.append(FilledOrder(order.id, order.symbol, e.quantity, e.price, order.side, order.time))
+                        break
+        for i in removal:
+            self.bid_book.remove(i)
+        if order.quantity>0 and order.type==OrderType.LIMIT:
+            self.insert_limit_order(order)
+
+        return filled_orders
+
+    def handle_limit_order(self, order):
+        if order.side==OrderSide.BUY:
+            filled_orders=self.handle_buy(order)
+        elif order.side==OrderSide.SELL:
+            filled_orders=self.handle_sell(order)
+        else:
+            raise UndefinedOrderSide("Undefined Order Side!")
+        return filled_orders
+
+    def handle_market_order(self, order):
+        if order.side==OrderSide.BUY:
+            filled_orders=self.handle_buy(order)
+        elif order.side==OrderSide.SELL:
+            filled_orders=self.handle_sell(order)
+        else:
+            raise UndefinedOrderSide("Undefined Order Side!")
+        return filled_orders
+
+    def handle_ioc_order(self, order):
+        if order.side==OrderSide.BUY:
+            filled_orders=self.handle_buy(order)
+        elif order.side==OrderSide.SELL:
+            filled_orders=self.handle_sell(order)
+        else:
+            raise UndefinedOrderSide("Undefined Order Side!")
+        return filled_orders
+
+    '''COMPLETE'''
+
+    def insert_limit_order(self, order):
+        try:
+            assert order.type == OrderType.LIMIT
+            if order.side == OrderSide.BUY:
+                self.bid_book.append(order)
+            else:
+                self.ask_book.append(order)
+        except:
+            raise UndefinedOrderSide("Undefined Order Side!")
+            return False
+        self.sort_order()
+        return True
+
+    '''COMPLETE'''
+
+    def amend_quantity(self, id, quantity):
+        order=None
+        for i in self.ask_book:
+            if i.id==id:
+                order=i
+        for i in self.bid_book:
+            if i.id==id:
+                order=i
+        if order!=None:
+            if quantity > order.quantity:
+                raise NewQuantityNotSmaller("Amendment Must Reduce Quantity!")
+            self.cancel_order(order.id)
+            order.quantity=quantity
+            self.insert_limit_order(order)
+        return False
+
+    '''COMPLETE'''
+
+    def cancel_order(self, id):
+        for i in self.ask_book:
+            if i.id == id:
+                self.ask_book.remove(i)
+                return True
+        for i in self.bid_book:
+            if i.id == id:
+                self.bid_book.remove(i)
+                return True
+        return False
+
 
 trader_to_exchange = deque()
 exchange_to_trader = [deque() for _ in range(100)]
@@ -146,19 +366,17 @@ class Trader(MyThread):
     def process_response(self, response):
         # Implement this function
         # You need to process each order according to the type (by enum) given by the 'response' variable
-        if response[0][0] not in (1,2,3,4):
-        # If the action taken by the trader is ambiguous you need to raise the following error
+        check = lambda x: 1 if (x ==OrderSide.BUY) else -1
+        if response[0]==1 and response[2]!=None:
+            torder=response[2]
+            # print('balance change on the trader: ', torder.id, self.balance_track[0], -check(torder.side) * torder.price * torder.quantity)
+            self.book_position+=check(torder.side)*torder.quantity
+            self.balance_track[0]-=check(torder.side)*torder.quantity*torder.price
+            # print('balance after on the trader: ',self.balance_track[0])
+        else:
             raise UndefinedResponse("Undefined Response Received!")
-        check = lambda x: 1 if (x ==OrderSide.SELL) else -1
-        if response[0][0]==1 and response[0][2]!=None:
-            for i in response[0][2]:
-                if i.id!=self.id:
-                    self.book_position+=check(i.side)*i.quantity
-                    print('original balance',self.balance_track)
-                    self.balance_track[0]-=check(i.side)*i.quantity*i.price
-                    print('new balance', self.balance_track)
-
-        if self.balance_track[0]==0:
+        if self.balance_track[0]<=0:
+            # print('!!!!!!!!!!one trader is down')
             self.is_started=False
 
 
@@ -194,8 +412,8 @@ class Trader(MyThread):
 class Exchange(MyThread):
     def __init__(self):
         super().__init__()
-        self.balance = [1000000 for _ in range(10)]
-        self.position = [0 for _ in range(10)]
+        self.balance = [1000000 for _ in range(100)]
+        self.position = [0 for _ in range(100)]
         self.matching_engine = MatchingEngine()
         # The exchange keeps track of the traders' balances
         # The exchange uses the matching engine you built previously
@@ -206,16 +424,18 @@ class Exchange(MyThread):
 
         # The list of results is expected to contain a tuple of the follow form:
         # (Trader id that processed the order, (action type enum, order))
+        # print('place a new order: ',order.id ,order.quantity,order.side)
         filled_order = self.matching_engine.handle_order(order)
         results.append((1, order.id, filled_order))
         # The exchange must update the balance of positions of each trader involved in the trade (if any)
         check = lambda x: 1 if (x ==OrderSide.BUY) else -1
         if filled_order != None:
+            # print('Order filled')
             for i in filled_order:
-                if i.id !=order.id:
-                    exchange.position[i.id] += check(i.side) * i.quantity
-                    exchange.balance[i.id] -= check(i.side) * i.price * i.quantity
-
+                # print('balance change on the exchange: ',i.id,self.balance[i.id],-check(i.side) * i.price * i.quantity)
+                self.position[i.id] += check(i.side) * i.quantity
+                self.balance[i.id] -= check(i.side) * i.price * i.quantity
+                # print('balance after on exchange',self.balance[i.id])
         return results
 
     def amend_quantity(self, id, quantity):
@@ -247,6 +467,7 @@ class Exchange(MyThread):
         # type given using the functions implemented above
 
         if request[0]==1:
+            # print('handling request:',request[0],request[1],request[2])
             response=self.place_new_order(request[2])
         elif request[0]==2:
             response=self.amend_quantity(request[1],request[2])
@@ -267,14 +488,16 @@ class Exchange(MyThread):
             request=trader_to_exchange.pop()
             response=self.handle_request(request)
             if response[0][0]==1:
-                exchange_to_trader[response[0][1]].appendleft(response)
+                if response[0][2]!=None:
+                    for o in response[0][2]:
+                        exchange_to_trader[o.id].appendleft((1,o.id,o))
 
 
 if __name__ == "__main__":
     trader_to_exchange = deque()
-    exchange_to_trader = [deque() for _ in range(10)]
+    exchange_to_trader = [deque() for _ in range(100)]
     MyThread.list_of_threads=[]
-    trader = [Trader(i) for i in range(10)]
+    trader = [Trader(i) for i in range(100)]
     exchange = Exchange()
 
     exchange.start()
@@ -293,11 +516,11 @@ if __name__ == "__main__":
 
     print("Total Money Amount for All Traders before Trading Session: " + str(sum_exch))
 
-    for i in range(2):
-        # print(i,len(trader_to_exchange),len(exchange_to_trader))
+    for i in range(10000):
         thread_active = False
         for t in MyThread.list_of_threads:
-            print(t.is_started)
+            # if t.is_started==False:
+            #     print(t.is_started)
             if t.is_started:
                 t.run_infinite_loop()
                 thread_active = True
@@ -312,3 +535,6 @@ if __name__ == "__main__":
                 sum_exch += b
 
     print("Total Money Amount for All Traders after Trading Session: ", str(int(sum_exch)))
+
+
+    # print(exchange.balance)
