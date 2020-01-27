@@ -67,3 +67,5 @@ if __name__=='__main__':
     print('exp(-4) = ',gaus(2))
     #exp(-4) =  0.01831563888873418
 
+import datetime
+datetime.datetime.now().minute
